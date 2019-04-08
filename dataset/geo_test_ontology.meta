@@ -1,0 +1,109 @@
+# database schema
+state:name,capital,population,area,population density,country
+city:state,name,population,country
+river:name,length,country,state
+border:name,state
+highlow:state,highest elevation,highest point,lowest elevation,lowest point
+mountain:state,name,height
+road:number,state
+lake:name,area,country,state
+----------------------------------------------------------------------
+# ontology concept's default display_prop, agg_prop, agg_func
+state:name, area, SUM
+city:name, population, SUM
+river:name, length, SUM
+border:name, state, SUM
+highlow:highest point, highest elevation, SUM
+mountain:name, height, SUM
+road:number, state, COUNT
+lake:name, area, SUM
+----------------------------------------------------------------------
+# onto_to_db
+state - state
+border - border
+city - city
+road - road
+river - river
+lake - lake
+mountain - mountain
+highlow - highlow
+state.name - state.name
+state.capital - state.capital
+state.population - state.population
+state.area - state.area
+state.population density - state.population density
+state.country - state.country
+city.state - city.state
+city.name - city.name
+city.population - city.population
+city.country - city.country
+river.name - river.name
+river.length - river.length
+river.country - river.country
+river.state - river.state
+border.name - border.name
+border.state - border.state
+highlow.state - highlow.state
+highlow.highest elevation - highlow.highest elevation
+highlow.highest point - highlow.highest point
+highlow.lowest elevation - highlow.lowest elevation
+highlow.lowest point - highlow.lowest point
+mountain.state - mountain.state
+mountain.name - mountain.name
+mountain.height - mountain.height
+road.number - road.number
+road.state - road.state
+lake.name - lake.name
+lake.area - lake.area
+lake.country - lake.country
+lake.state - lake.state
+----------------------------------------------------------------------
+# db_to_onto
+state - state
+border - border
+city - city
+road - road
+river - river
+lake - lake
+mountain - mountain
+highlow - highlow
+state.name - state.name
+state.capital - state.capital
+state.population - state.population
+state.area - state.area
+state.population density - state.population density
+state.country - state.country
+city.state - city.state
+city.name - city.name
+city.population - city.population
+city.country - city.country
+river.name - river.name
+river.length - river.length
+river.country - river.country
+river.state - river.state
+border.name - border.name
+border.state - border.state
+highlow.state - highlow.state
+highlow.highest elevation - highlow.highest elevation
+highlow.highest point - highlow.highest point
+highlow.lowest elevation - highlow.lowest elevation
+highlow.lowest point - highlow.lowest point
+mountain.state - mountain.state
+mountain.name - mountain.name
+mountain.height - mountain.height
+road.number - road.number
+road.state - road.state
+lake.name - lake.name
+lake.area - lake.area
+lake.country - lake.country
+lake.state - lake.state
+----------------------------------------------------------------------
+# db_primary_key
+state - name
+border - state
+city - state
+road - state
+river - state
+lake - state
+mountain - state
+highlow - state

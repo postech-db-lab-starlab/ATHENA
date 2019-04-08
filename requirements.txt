@@ -1,0 +1,5 @@
+owlready2
+inflect
+networkx
+textblob
+pymysql

@@ -1,0 +1,12 @@
+# add
+lowest point - lowest spot
+length - long
+population - many people,many citizens,populous,how large,populated
+area - how large, how big
+height - how high
+run - run through,in
+-----------------------------
+# Remove
+country - state,area
+state - tell
+number - total

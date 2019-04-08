@@ -1,0 +1,61 @@
+DROP TABLE IF EXISTS `state`;
+CREATE TABLE `state`(
+	`name` text,
+	`capital` text,
+	`population` int,
+	`area` double,
+	`population density` double,
+	`country` text
+);
+
+DROP TABLE IF EXISTS `city`;
+CREATE TABLE `city`(
+	`state` text,
+	`name` text,
+	`population` int,
+	`country` text
+);
+
+DROP TABLE IF EXISTS `river`;
+CREATE TABLE `river`(
+	`name` text,
+	`length` double,
+	`country` text,
+	`state` text
+);
+
+DROP TABLE IF EXISTS `border`;
+CREATE TABLE `border`(
+	`name` text,
+	`state` text
+);
+
+DROP TABLE IF EXISTS `highlow`;
+CREATE TABLE `highlow` (
+	`state` text,
+	`highest point` text,
+	`highest elevation` int,
+	`lowest point` text,
+	`lowest elevation` int
+);
+
+DROP TABLE IF EXISTS `mountain`;
+CREATE TABLE `mountain`(
+	`state` text,
+	`name` text,
+	`height` double
+);
+
+DROP TABLE IF EXISTS `road`;
+CREATE TABLE `road`(
+	`number` int,
+	`state` text
+);
+
+DROP TABLE IF EXISTS `lake`;
+CREATE TABLE `lake`(
+	`name` text,
+	`area` double,
+	`country` text,
+	`state` text
+);
